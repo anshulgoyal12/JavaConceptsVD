@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [LoginSuite]">
+  <test name="BuyerAddress(failed)">
+    <classes>
+      <class name="Buyer.MyProfile">
+        <methods>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- Buyer.MyProfile -->
+      <class name="Buyer.Address">
+        <methods>
+          <include name="addAddress"/>
+          <include name="loginApplication"/>
+        </methods>
+      </class> <!-- Buyer.Address -->
+    </classes>
+  </test> <!-- BuyerAddress(failed) -->
+  <test name="MyProfile(failed)">
+    <classes>
+      <class name="Buyer.MyProfile">
+        <methods>
+          <include name="editProfile"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- Buyer.MyProfile -->
+    </classes>
+  </test> <!-- MyProfile(failed) -->
+</suite> <!-- Failed suite [LoginSuite] -->
